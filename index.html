@@ -3,24 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Amith's Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(120deg, #84fab0, #8fd3f4);
+            color: #333;
+        }
+        header {
+            background: #003366;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            animation: glow 1.5s infinite alternate;
+        }
+        @keyframes glow {
+            from { text-shadow: 0 0 5px #fff; }
+            to { text-shadow: 0 0 20px #00ffcc; }
+        }
+        nav {
+            margin-top: 1em;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1em;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #00ffcc;
+        }
+        main {
+            padding: 2em;
+            text-align: center;
+            animation: fadeIn 2s ease;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        main h2 {
+            font-size: 2em;
+            color: #003366;
+        }
+        footer {
+            background: #003366;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+        footer a {
+            color: #00ffcc;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Website</h1>
+        <h1>Welcome to Amith's Website</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="resume.html">Resume</a>
-            <a href="bio.html">Bio-data</a>
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="resume.html"><i class="fas fa-file-alt"></i> Resume</a>
+            <a href="bio.html"><i class="fas fa-user"></i> Bio-data</a>
         </nav>
     </header>
     <main>
         <h2>About Me</h2>
-        <p>Hi, I'm [Your Name]. Welcome to my personal website!</p>
+        <p>Hi, I'm <strong>Amith</strong>. Welcome to my personal website! I love creating unique and interactive designs.</p>
+        <button onclick="alert('Thanks for visiting!')">Click Me!</button>
     </main>
     <footer>
-        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+        <p>&copy; 2024 Amith. All rights reserved.</p>
+        <p>Follow me: 
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a> | 
+            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        </p>
     </footer>
 </body>
 </html>
+
